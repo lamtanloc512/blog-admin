@@ -17,9 +17,14 @@
 		<link href="assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
 		<link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+		<style>
+			.ck-editor__editable {
+				min-height: 400px;
+			}
+		</style>
 	</head>
 
-	<body>
+	<body class="dark-sidenav">
 		<!-- Left Sidenav -->
 		<div class="left-sidenav">
 			<!-- LOGO -->
@@ -522,11 +527,10 @@
 							<div class="page-title-box">
 								<div class="row">
 									<div class="col">
-										<h4 class="page-title">Starer</h4>
+										<h4 class="page-title">Blog</h4>
 										<ol class="breadcrumb">
-											<li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
-											<li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
-											<li class="breadcrumb-item active">Starer</li>
+											<li class="breadcrumb-item"><a href="javascript:void(0);">Blog</a></li>
+											<li class="breadcrumb-item active">New</li>
 										</ol>
 									</div>
 									<!--end col-->
@@ -551,15 +555,27 @@
 					<!--end row-->
 					<div class="row">
 						<div class="col">
-							<h1>Editor</h1>
-							<textarea name="editor" id="editor"></textarea>
+							<div class="mb-3 row">
+								<div class="col">
+									<label for="title" class="col mb-2 form-label align-self-center mb-lg-0 text-end"><h4>Title</h4></label>
+									<input class="form-control" name="title" type="text" id="title" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="editor" class="col mb-2 form-label align-self-center mb-lg-0 text-end">
+										<h4>Content</h4>
+									</label>
+									<textarea name="editor" id="editor"></textarea>
+								</div>
+							</div>
 						</div>
 						<div class="col-3">
 							<div class="card">
-								<div class="card-body">
-									<h2>Side</h2>
-								</div>
-							</div>
+                                <div class="card-body">
+                                    <button class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
 						</div>
 					</div>
 					<!-- end page title end breadcrumb -->
@@ -601,6 +617,7 @@
 				// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
 			})
 				.then((editor) => {
+					// editor.ui.view.editable.element.style.height = '300px';
 					window.editor = editor;
 				})
 				.catch((err) => {
