@@ -1,0 +1,15 @@
+spring:
+    jpa:
+        show-sql: true
+        generate-ddl: true
+        open-in-view: false
+        database-platform: org.hibernate.dialect.MySQL8Dialect
+        hibernate:
+            ddl-auto: update
+    datasource:
+        url: jdbc:mysql://35.240.188.99/my_blog?useSSL=false
+        username: root
+        password: Lamtanloc321@512
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+            
