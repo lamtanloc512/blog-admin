@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Dastone - Admin & Dashboard Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+		<meta content="" name="author" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<!-- App favicon -->
+		<link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+		<!-- App css -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+		<link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+		<style>
+			.ck-editor__editable {
+				min-height: 400px;
+			}
+			.form-control {
+				border-color: #99afcd;
+			}
+		</style>
+		<script type="module" crossorigin src="/assets/post.5a374052.js"></script>
+		<link rel="modulepreload" crossorigin href="/assets/jsx-runtime.de477f7f.js">
+	</head>
+
+	<body class="dark-sidenav">
+		<!-- Left Sidenav -->
+		<div class="left-sidenav">
+			<!-- LOGO -->
+			<div class="brand">
+				<a href="index.html" class="logo">
+					<span>
+						<img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm" />
+					</span>
+					<span>
+						<img src="assets/images/logo.png" alt="logo-large" class="logo-lg logo-light" />
+						<img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark" />
+					</span>
+				</a>
+			</div>
+			<!--end logo-->
+			<div class="menu-content h-100" data-simplebar>
+				<ul class="metismenu left-sidenav-menu">
+					<li class="menu-label mt-0">Main</li>
+					<li>
+						<a href="javascript: void(0);">
+							<i data-feather="home" class="align-self-center menu-icon"></i><span>Blog</span
+							><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span
+						></a>
+						<ul class="nav-second-level" aria-expanded="false">
+							<li>
+								<a href="javascript: void(0);"> <i class="ti-control-record"></i>All Blog </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="apps-chat.html"><i class="ti-control-record"></i>Create New</a>
+							</li>
+						</ul>
+					</li>
+					<hr class="hr-dashed hr-menu" />
+				</ul>
+			</div>
+		</div>
+		<!-- end left-sidenav-->
+
+		<div class="page-wrapper">
+			<!-- Top Bar Start -->
+			<div class="topbar">
+				<!-- Navbar -->
+				<nav class="navbar-custom">
+					<ul class="list-unstyled topbar-nav float-end mb-0">
+						<li class="dropdown hide-phone">
+							<a
+								class="nav-link dropdown-toggle arrow-none waves-light waves-effect"
+								data-bs-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-haspopup="false"
+								aria-expanded="false">
+								<i data-feather="search" class="topbar-icon"></i>
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-end dropdown-lg p-0">
+								<!-- Top Search Bar -->
+								<div class="app-search-topbar">
+									<form action="#" method="get">
+										<input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text..." />
+										<button type="submit"><i class="ti-search"></i></button>
+									</form>
+								</div>
+							</div>
+						</li>
+
+						<li class="dropdown notification-list">
+							<a
+								class="nav-link dropdown-toggle arrow-none waves-light waves-effect"
+								data-bs-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-haspopup="false"
+								aria-expanded="false">
+								<i data-feather="bell" class="align-self-center topbar-icon"></i>
+								<span class="badge bg-danger rounded-pill noti-icon-badge">2</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end dropdown-lg pt-0">
+								<h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+									Notifications <span class="badge bg-primary rounded-pill">2</span>
+								</h6>
+								<div class="notification-menu" data-simplebar>
+									<!-- item-->
+									<a href="#" class="dropdown-item py-3">
+										<small class="float-end text-muted ps-2">2 min ago</small>
+										<div class="media">
+											<div class="avatar-md bg-soft-primary">
+												<i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+											</div>
+											<div class="media-body align-self-center ms-2 text-truncate">
+												<h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+												<small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+											</div>
+											<!--end media-body-->
+										</div>
+										<!--end media--> </a
+									><!--end-item-->
+									<!-- item-->
+									<a href="#" class="dropdown-item py-3">
+										<small class="float-end text-muted ps-2">10 min ago</small>
+										<div class="media">
+											<div class="avatar-md bg-soft-primary">
+												<img src="assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle" />
+											</div>
+											<div class="media-body align-self-center ms-2 text-truncate">
+												<h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+												<small class="text-muted mb-0">It is a long established fact that a reader.</small>
+											</div>
+											<!--end media-body-->
+										</div>
+										<!--end media--> </a
+									><!--end-item-->
+									<!-- item-->
+									<a href="#" class="dropdown-item py-3">
+										<small class="float-end text-muted ps-2">40 min ago</small>
+										<div class="media">
+											<div class="avatar-md bg-soft-primary">
+												<i data-feather="users" class="align-self-center icon-xs"></i>
+											</div>
+											<div class="media-body align-self-center ms-2 text-truncate">
+												<h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+												<small class="text-muted mb-0">Dummy text of the printing.</small>
+											</div>
+											<!--end media-body-->
+										</div>
+										<!--end media--> </a
+									><!--end-item-->
+									<!-- item-->
+									<a href="#" class="dropdown-item py-3">
+										<small class="float-end text-muted ps-2">1 hr ago</small>
+										<div class="media">
+											<div class="avatar-md bg-soft-primary">
+												<img src="assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle" />
+											</div>
+											<div class="media-body align-self-center ms-2 text-truncate">
+												<h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+												<small class="text-muted mb-0">It is a long established fact that a reader.</small>
+											</div>
+											<!--end media-body-->
+										</div>
+										<!--end media--> </a
+									><!--end-item-->
+									<!-- item-->
+									<a href="#" class="dropdown-item py-3">
+										<small class="float-end text-muted ps-2">2 hrs ago</small>
+										<div class="media">
+											<div class="avatar-md bg-soft-primary">
+												<i data-feather="check-circle" class="align-self-center icon-xs"></i>
+											</div>
+											<div class="media-body align-self-center ms-2 text-truncate">
+												<h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+												<small class="text-muted mb-0">Dummy text of the printing.</small>
+											</div>
+											<!--end media-body-->
+										</div>
+										<!--end media--> </a
+									><!--end-item-->
+								</div>
+								<!-- All-->
+								<a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+									View all <i class="fi-arrow-right"></i>
+								</a>
+							</div>
+						</li>
+
+						<li class="dropdown">
+							<a
+								class="nav-link dropdown-toggle waves-effect waves-light nav-user"
+								data-bs-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-haspopup="false"
+								aria-expanded="false">
+								<span class="ms-1 nav-user-name hidden-sm">Nick</span>
+								<img src="assets/images/users/user-5.jpg" alt="profile-user" class="rounded-circle thumb-xs" />
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="#"
+									><i data-feather="user" class="align-self-center icon-xs icon-dual me-1"></i> Profile</a
+								>
+								<a class="dropdown-item" href="#"
+									><i data-feather="settings" class="align-self-center icon-xs icon-dual me-1"></i> Settings</a
+								>
+								<div class="dropdown-divider mb-0"></div>
+								<a class="dropdown-item" href="#"
+									><i data-feather="power" class="align-self-center icon-xs icon-dual me-1"></i> Logout</a
+								>
+							</div>
+						</li>
+					</ul>
+					<!--end topbar-nav-->
+
+					<ul class="list-unstyled topbar-nav mb-0">
+						<li>
+							<button class="nav-link button-menu-mobile">
+								<i data-feather="menu" class="align-self-center topbar-icon"></i>
+							</button>
+						</li>
+						<li class="creat-btn">
+							<div class="nav-link">
+								<a class="btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus me-2"></i>New Task</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!-- end navbar-->
+			</div>
+			<!-- Top Bar End -->
+
+			<!-- Page Content-->
+			<div class="page-content">
+				<div class="container-fluid">
+					<!-- Page-Title -->
+					<div class="row mb-3">
+						<div class="col-sm-12">
+							<div class="page-title-box">
+								<div class="row">
+									<div class="col">
+										<h4 class="page-title">Blog</h4>
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="javascript:void(0);">Blog</a></li>
+											<li class="breadcrumb-item active">New</li>
+										</ol>
+									</div>
+									<!--end col-->
+									<div class="col-auto align-self-center">
+										<a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
+											<span class="day-name" id="Day_Name">Today:</span>&nbsp;
+											<span class="" id="Select_date">Jan 11</span>
+											<i data-feather="calendar" class="align-self-center icon-xs ms-1"></i>
+										</a>
+										<a href="#" class="btn btn-sm btn-outline-primary">
+											<i data-feather="download" class="align-self-center icon-xs"></i>
+										</a>
+									</div>
+									<!--end col-->
+								</div>
+								<!--end row-->
+							</div>
+							<!--end page-title-box-->
+						</div>
+						<!--end col-->
+					</div>
+					<!--end row-->
+					<div class="row">
+						<div class="col">
+							<div class="mb-3 row">
+								<div class="col">
+									<label for="title" class="col mb-2 form-label align-self-center mb-lg-0 text-end"><h4>Title</h4></label>
+									<input class="form-control" name="title" type="text" id="post__title" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="editor" class="col mb-2 form-label align-self-center mb-lg-0 text-end">
+										<h4>Content</h4>
+									</label>
+									<textarea name="editor" id="editor"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="card">
+								<div class="card-body">
+									<button id="btn_submit_content" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end page title end breadcrumb -->
+					<div id="root"></div>
+				</div>
+				<!-- container -->
+
+				<footer class="footer text-center text-sm-start">
+					&copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					Dastone
+					<span class="text-muted d-none d-sm-inline-block float-end"
+						>Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span
+					>
+				</footer>
+				<!--end footer-->
+			</div>
+			<!-- end page content -->
+		</div>
+		<!-- end page-wrapper -->
+
+		<!-- jQuery  -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/metismenu.min.js"></script>
+		<script src="assets/js/waves.js"></script>
+		<script src="assets/js/feather.min.js"></script>
+		<script src="assets/js/simplebar.min.js"></script>
+		<script src="assets/js/moment.js"></script>
+		<script src="plugins/daterangepicker/daterangepicker.js"></script>
+
+		<!-- App js -->
+		<script src="assets/js/app.js"></script>
+		<!-- <script src="plugins/ckeditor5/ckeditor.js"></script> -->
+		<script src="https://cdn.ckeditor.com/ckeditor5/35.2.0/super-build/ckeditor.js"></script>
+		<script>
+			let editor;
+			CKEDITOR.ClassicEditor.create(document.getElementById('editor'), {
+				// https://ckeditor.com/docs/ckeditor5/latest/features/toolbar/toolbar.html#extended-toolbar-configuration-format
+				toolbar: {
+					items: [
+						'exportPDF',
+						'exportWord',
+						'|',
+						'findAndReplace',
+						'selectAll',
+						'|',
+						'heading',
+						'|',
+						'bold',
+						'italic',
+						'strikethrough',
+						'underline',
+						'code',
+						'subscript',
+						'superscript',
+						'removeFormat',
+						'|',
+						'bulletedList',
+						'numberedList',
+						'todoList',
+						'|',
+						'outdent',
+						'indent',
+						'|',
+						'undo',
+						'redo',
+						'-',
+						'fontSize',
+						'fontFamily',
+						'fontColor',
+						'fontBackgroundColor',
+						'highlight',
+						'|',
+						'alignment',
+						'|',
+						'link',
+						'insertImage',
+						'blockQuote',
+						'insertTable',
+						'mediaEmbed',
+						'codeBlock',
+						'htmlEmbed',
+						'|',
+						'specialCharacters',
+						'horizontalLine',
+						'pageBreak',
+						'|',
+						'textPartLanguage',
+						'|',
+						'sourceEditing',
+					],
+					shouldNotGroupWhenFull: true,
+				},
+				// Changing the language of the interface requires loading the language file using the <script> tag.
+				// language: 'es',
+				list: {
+					properties: {
+						styles: true,
+						startIndex: true,
+						reversed: true,
+					},
+				},
+				// https://ckeditor.com/docs/ckeditor5/latest/features/headings.html#configuration
+				heading: {
+					options: [
+						{ model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+						{ model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+						{ model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+						{ model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
+						{ model: 'heading4', view: 'h4', title: 'Heading 4', class: 'ck-heading_heading4' },
+						{ model: 'heading5', view: 'h5', title: 'Heading 5', class: 'ck-heading_heading5' },
+						{ model: 'heading6', view: 'h6', title: 'Heading 6', class: 'ck-heading_heading6' },
+					],
+				},
+				// https://ckeditor.com/docs/ckeditor5/latest/features/editor-placeholder.html#using-the-editor-configuration
+				placeholder: 'Hello, create some contents today ?',
+				// https://ckeditor.com/docs/ckeditor5/latest/features/font.html#configuring-the-font-family-feature
+				fontFamily: {
+					options: [
+						'default',
+						'Arial, Helvetica, sans-serif',
+						'Courier New, Courier, monospace',
+						'Georgia, serif',
+						'Lucida Sans Unicode, Lucida Grande, sans-serif',
+						'Tahoma, Geneva, sans-serif',
+						'Times New Roman, Times, serif',
+						'Trebuchet MS, Helvetica, sans-serif',
+						'Verdana, Geneva, sans-serif',
+					],
+					supportAllValues: true,
+				},
+				// https://ckeditor.com/docs/ckeditor5/latest/features/font.html#configuring-the-font-size-feature
+				fontSize: {
+					options: [10, 12, 14, 'default', 18, 20, 22],
+					supportAllValues: true,
+				},
+				// Be careful with the setting below. It instructs CKEditor to accept ALL HTML markup.
+				// https://ckeditor.com/docs/ckeditor5/latest/features/general-html-support.html#enabling-all-html-features
+				htmlSupport: {
+					allow: [
+						{
+							name: /.*/,
+							attributes: true,
+							classes: true,
+							styles: true,
+						},
+					],
+				},
+				// Be careful with enabling previews
+				// https://ckeditor.com/docs/ckeditor5/latest/features/html-embed.html#content-previews
+				htmlEmbed: {
+					showPreviews: true,
+				},
+				// https://ckeditor.com/docs/ckeditor5/latest/features/link.html#custom-link-attributes-decorators
+				link: {
+					decorators: {
+						addTargetToExternalLinks: true,
+						defaultProtocol: 'https://',
+						toggleDownloadable: {
+							mode: 'manual',
+							label: 'Downloadable',
+							attributes: {
+								download: 'file',
+							},
+						},
+					},
+				},
+				// https://ckeditor.com/docs/ckeditor5/latest/features/mentions.html#configuration
+				mention: {
+					feeds: [
+						{
+							marker: '@',
+							feed: [
+								'@apple',
+								'@bears',
+								'@brownie',
+								'@cake',
+								'@cake',
+								'@candy',
+								'@canes',
+								'@chocolate',
+								'@cookie',
+								'@cotton',
+								'@cream',
+								'@cupcake',
+								'@danish',
+								'@donut',
+								'@dragée',
+								'@fruitcake',
+								'@gingerbread',
+								'@gummi',
+								'@ice',
+								'@jelly-o',
+								'@liquorice',
+								'@macaroon',
+								'@marzipan',
+								'@oat',
+								'@pie',
+								'@plum',
+								'@pudding',
+								'@sesame',
+								'@snaps',
+								'@soufflé',
+								'@sugar',
+								'@sweet',
+								'@topping',
+								'@wafer',
+							],
+							minimumCharacters: 1,
+						},
+					],
+				},
+				// The "super-build" contains more premium features that require additional configuration, disable them below.
+				// Do not turn them on unless you read the documentation and know how to configure them and setup the editor.
+				removePlugins: [
+					// These two are commercial, but you can try them out without registering to a trial.
+					// 'ExportPdf',
+					// 'ExportWord',
+					'CKBox',
+					'CKFinder',
+					'EasyImage',
+					// This sample uses the Base64UploadAdapter to handle image uploads as it requires no configuration.
+					// https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/base64-upload-adapter.html
+					// Storing images as Base64 is usually a very bad idea.
+					// Replace it on production website with other solutions:
+					// https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/image-upload.html
+					// 'Base64UploadAdapter',
+					'RealTimeCollaborativeComments',
+					'RealTimeCollaborativeTrackChanges',
+					'RealTimeCollaborativeRevisionHistory',
+					'PresenceList',
+					'Comments',
+					'TrackChanges',
+					'TrackChangesData',
+					'RevisionHistory',
+					'Pagination',
+					'WProofreader',
+					// Careful, with the Mathtype plugin CKEditor will not load when loading this sample
+					// from a local file system (file://) - load this site via HTTP server if you enable MathType
+					'MathType',
+				],
+			})
+				.then((newEditor) => {
+					editor = newEditor;
+				})
+				.catch((error) => {
+					console.error(error);
+				});
+
+			document.querySelector('#btn_submit_content').addEventListener('click', () => {
+				let Post = {
+					title: $('#post__title').val(),
+					content: editor.getData(),
+					authorId: 1,
+				};
+				console.log(Post);
+
+				fetch('/api/post?' + 'user=1', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(Post),
+				})
+					.then((response) => response.json())
+					.then((result) => {
+						editor.setData("")
+						$('#post__title').val("")
+					})
+					.catch((err) => console.log(err));
+			});
+		</script>
+		
+	</body>
+</html>
