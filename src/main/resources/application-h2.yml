@@ -1,0 +1,17 @@
+spring:
+    jpa:
+        show-sql: true
+        generate-ddl: true
+        open-in-view: false
+        properties:
+            hibernate:
+                ddl-auto: update
+                dialect: org.hibernate.dialect.H2Dialect
+    datasource:
+        url: jdbc:h2:file:/database/my_blog
+        username: root
+        password: 
+    h2:
+        console.enabled: true
+
+            
