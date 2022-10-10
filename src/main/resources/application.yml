@@ -5,4 +5,4 @@ spring:
   thymeleaf:
     suffix: .html
   profiles:
-    active: h2
+    active: gcpMysql

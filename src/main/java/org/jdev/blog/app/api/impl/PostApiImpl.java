@@ -1,9 +1,5 @@
 package org.jdev.blog.app.api.impl;
 
-import java.util.Optional;
-
-import javax.websocket.server.PathParam;
-
 import org.jdev.blog.app.api.PostApi;
 import org.jdev.blog.app.dto.Message;
 import org.jdev.blog.app.dto.PostDto;

@@ -1,0 +1,11 @@
+database: mysql
+spring:
+    cloud:
+      gcp:
+        project-id: evocative-radar-351004
+        sql.database-name: my_blog
+        sql.instance-connection-name: evocative-radar-351004:asia-southeast1:loct-blog
+    sql.init.mode: always
+    datasource:
+        username: root
+        password: Lamtanloc321@512        
