@@ -19,7 +19,7 @@ public class AppApplication implements WebMvcConfigurer {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/plugins/**").addResourceLocations("classpath:/templates/plugins/**");
+		registry.addResourceHandler("/plugins/**").addResourceLocations("classpath:/templates/plugins/");
 		registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/templates/assets/");
 	}
 
