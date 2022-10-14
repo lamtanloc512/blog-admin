@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
-const root = resolve(__dirname, 'src');
 const outDir = resolve(__dirname, 'dist');
 
 export default defineConfig({
-	plugins: [react()],
+	plugins: [
+		react(),
+	],
 	server: {
 		port: 3000,
 		proxy: {
@@ -30,3 +31,7 @@ export default defineConfig({
 		sourcemap: true,
 	},
 });
+function externalGlobals(arg0: { jquery: string; }): import("vite").PluginOption {
+	throw new Error('Function not implemented.');
+}
+
